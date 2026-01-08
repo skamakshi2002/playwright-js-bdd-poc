@@ -1,0 +1,93 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "amazon-add-to-cart;add-product-to-cart-and-validate",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Add product to cart and validate",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 530328300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "user opens Amazon website",
+            "match": {
+              "location": "step-definitions\\AddToCart.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 865709700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "user searches a product",
+            "match": {
+              "location": "step-definitions\\AddToCart.steps.js:11"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1534299,
+              "error_message": "page.fill: value: expected string, got object\n    at AmazonHomePage.searchProduct (C:\\Users\\Administrator\\Documents\\kamakshi\\Playwright\\poc\\playwright-bdd-pom\\pages\\AmazonHomePage.js:9:21)\n    at World.<anonymous> (C:\\Users\\Administrator\\Documents\\kamakshi\\Playwright\\poc\\playwright-bdd-pom\\step-definitions\\AddToCart.steps.js:13:14)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "user adds product to cart",
+            "match": {
+              "location": "step-definitions\\AddToCart.steps.js:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "product should be visible in cart",
+            "match": {
+              "location": "step-definitions\\AddToCart.steps.js:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 147459200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "amazon-add-to-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Amazon Add to Cart",
+    "tags": [],
+    "uri": "features\\addToCart.feature"
+  }
+]

@@ -2,10 +2,15 @@
   "name": "playwright-bdd-amazon-poc",
   "version": "1.0.0",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "extent": "node utils/generateExtentReport.js",
+    "test:report": "npm test && npm run extent"
   },
   "dependencies": {
-    "@playwright/test": "^1.42.0",
-    "@cucumber/cucumber": "^10.0.0"
+    "@cucumber/cucumber": "^10.0.0",
+    "@playwright/test": "^1.42.0"
+  },
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^3.9.3"
   }
 }
